@@ -1,38 +1,41 @@
-import tkinter as tk  # 使用Tkinter前需要先导入
+import tkinter as tk
 
-# 第1步，实例化object，建立窗口window
-window = tk.Tk()
+def custom_function(a, b):
+    output1 = a % 8
+    output2 = b % 8
+    output3 = (a + b) % 6
+    return output1, output2, output3
 
-# 第2步，给窗口的可视化起名字
-window.title('简易梅花')
+def calculate():
+    a = int(entry_a.get())
+    b = int(entry_b.get())
+    result1, result2, result3 = custom_function(a, b)
+    result_var.set(f"上卦：{result1}, 下卦：{result2}, 动爻：{result3}")
 
-# 第3步，设定窗口的大小(长 * 宽)
-window.geometry('500x300')  # 这里的乘是小x
+# 创建主窗口
+root = tk.Tk()
+root.title("简易梅花")
+root.geometry('500x300')
 
-# 第4步，在图形界面上设定输入框控件entry框并放置
-e = tk.Entry(window, show = None)#显示成明文形式
-e.pack()
+# 创建输入框和标签
+label_a = tk.Label(root, text="上卦数：" )
+label_a.grid(row=0, column=0)
+entry_a = tk.Entry(root)
+entry_a.grid(row=0, column=1)
 
-# 第5步，定义两个触发事件时的函数insert_point和insert_end（注意：因为Python的执行顺序是从上往下，所以函数一定要放在按钮的上面）
-def insert_point(): # 在鼠标焦点处插入输入内容
-    var = e.get()
-    t.insert('insert', var)
-def insert_end():   # 在文本框内容最后接着插入输入内容
-    var = e.get()
-    t.insert('end', var)
+label_b = tk.Label(root, text="下卦数：")
+label_b.grid(row=1, column=0)
+entry_b = tk.Entry(root)
+entry_b.grid(row=1, column=1)
 
-# 第6步，创建并放置两个按钮分别触发两种情况
-b1 = tk.Button(window, text='上卦数', width=10,
-               height=2, command=insert_point)
-b1.pack()
-b2 = tk.Button(window, text='下卦数', width=10,
-               height=2, command=insert_end)
-b2.pack()
+# 创建计算按钮
+button = tk.Button(root, text="计算", command=calculate)
+button.grid(row=2, column=0, columnspan=2)
 
-# 第7步，创建并放置一个多行文本框text用以显示，指定height=3为文本框是三个字符高度
-t = tk.Text(window, height=3)
-t.pack()
+# 创建结果标签
+result_var = tk.StringVar()
+result_label = tk.Label(root, textvariable=result_var)
+result_label.grid(row=3, column=0, columnspan=2)
 
-# 第8步，主窗口循环显示
-window.mainloop()
-
+# 运行主循环
+root.mainloop()
