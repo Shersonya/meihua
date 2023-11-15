@@ -8,7 +8,7 @@ def custom_function(a, b):
     return output1, output2, output3
 
 
-# 计算
+# 计算公式
 def calculate():
     a = int(entry_a.get())
     b = int(entry_b.get())
