@@ -139,8 +139,8 @@ def calculate_with_plum_flower():
 	print("互卦为:", hu_gua_data['name'])
 	print("辞:", hu_gua_data['words'], "译:", hu_gua_data['white_words'])
 	print("象:", hu_gua_data['picture'], "译:", hu_gua_data['white_picture'])
-	print("卦股及策略:", gua_data['stock_suggestion'])
-	print("爻辞:", gua_data['yaoci'])
+	print("卦股及策略:", hu_gua_data['stock_suggestion'])
+	print("爻辞:", hu_gua_data['yaoci'])
 
 	print_a_wait_animation("正在组成变卦：", fake_delay)
 	print("------------------------------------------------变卦------------------------------------------------")
@@ -161,8 +161,8 @@ def calculate_with_plum_flower():
 	print("变卦为:", change_gua_data['name'])
 	print("辞:", change_gua_data['words'], "译:", change_gua_data['white_words'])
 	print("象:", change_gua_data['picture'], "译:", change_gua_data['white_picture'])
-	print("卦股及策略:", gua_data['stock_suggestion'])
-	print("爻辞:", gua_data['yaoci'])
+	print("卦股及策略:", change_gua_data['stock_suggestion'])
+	print("爻辞:", change_gua_data['yaoci'])
 
 def print_a_wait_animation(tips, times):
     animation = "|/-\\"
