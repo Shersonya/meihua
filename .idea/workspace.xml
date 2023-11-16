@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82b64447-5d27-42cf-99a0-21f227fd5e74" name="Changes" comment="fix base gua and hu gua">
+    <list default="true" id="82b64447-5d27-42cf-99a0-21f227fd5e74" name="Changes" comment="fix all mapping bugs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -70,7 +70,8 @@
       <option name="presentableId" value="Default" />
       <updated>1700038841306</updated>
       <workItem from="1700038891629" duration="1407000" />
-      <workItem from="1700040957214" duration="20030000" />
+      <workItem from="1700040957214" duration="20394000" />
+      <workItem from="1700127021151" duration="669000" />
     </task>
     <task id="LOCAL-00001" summary="minor change">
       <created>1700041029204</created>
@@ -100,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700123492249</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix all mapping bugs">
+      <created>1700125671137</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700125671137</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,10 +119,11 @@
     <MESSAGE value="support basic calculation" />
     <MESSAGE value="add yaoci to json" />
     <MESSAGE value="fix base gua and hu gua" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix base gua and hu gua" />
+    <MESSAGE value="fix all mapping bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix all mapping bugs" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/meihua$main.coverage" NAME="main Coverage Results" MODIFIED="1700040837672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/main_py$main.coverage" NAME="main Coverage Results" MODIFIED="1700125605483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/main_py$main.coverage" NAME="main Coverage Results" MODIFIED="1700127358199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

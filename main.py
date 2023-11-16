@@ -1,6 +1,6 @@
 import json
-import random
 import time
+import sys
 
 # 别挂配置数据
 gua_data_path = "meihua_data.json"
@@ -164,7 +164,6 @@ def calculate_with_plum_flower():
 	print("卦股及策略:", gua_data['stock_suggestion'])
 	print("爻辞:", gua_data['yaoci'])
 
-
 def print_a_wait_animation(tips, times):
     animation = "|/-\\"
     idx = 0
@@ -173,7 +172,6 @@ def print_a_wait_animation(tips, times):
               animation[idx % len(animation)], animation[idx % len(animation)], end="\r"),
         idx += 1
         time.sleep(0.1)
-
 
 init_gua_data(gua_data_path)
 calculate_with_plum_flower()
