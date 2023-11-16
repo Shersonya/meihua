@@ -80,7 +80,9 @@ def old_map_new(num):
 	mapping_dict = {1: 7, 2: 3, 3: 5, 4: 1, 5: 6, 6: 2, 7: 4, 0: 0}
 	return mapping_dict.get(num)
 
-
+def yao_index_map(num):
+	mapping_dict = {1: 3, 2: 4, 3: 5, 4: 0, 5: 1, 6: 2}
+	return mapping_dict.get(num)
 
 # 使用梅花易数
 def calculate_with_plum_flower():
@@ -121,9 +123,11 @@ def calculate_with_plum_flower():
 	print_a_wait_animation("正在组成互卦：", fake_delay)
 	print("------------------------------------------------互卦------------------------------------------------")
 	# 读取互卦象信息
-	up_hu_yao_list = [yao_list[0], yao_list[5], yao_list[4]]
+	#up_hu_yao_list = [yao_list[0], yao_list[5], yao_list[4]]
+	up_hu_yao_list = [yao_list[5], yao_list[0], yao_list[1]]
 	up_hu_gua = base_yao_to_gua(up_hu_yao_list)
-	down_hu_yao_list = [yao_list[1], yao_list[0], yao_list[5]]
+	#down_hu_yao_list = [yao_list[1], yao_list[0], yao_list[5]]
+	down_hu_yao_list = [yao_list[4], yao_list[5], yao_list[0]]
 	# print("up_hu_yao_list:", up_hu_yao_list)
 	# print("down_hu_yao_list:", down_hu_yao_list)
 	down_hu_gua = base_yao_to_gua(down_hu_yao_list)
@@ -140,17 +144,19 @@ def calculate_with_plum_flower():
 
 	print_a_wait_animation("正在组成变卦：", fake_delay)
 	print("------------------------------------------------变卦------------------------------------------------")
-	change_index = dongyao
+	change_index = yao_index_map(dongyao)
 	change_yao_list = yao_list[:]
 	change_yao_list[change_index] = 0 if change_yao_list[change_index] == 1 else 1
 	up_change_yao_list = change_yao_list[0:3]
 	up_change_gua = base_yao_to_gua(up_change_yao_list)
-	down_change_yao_list = change_yao_list[3:5]
+	down_change_yao_list = change_yao_list[3:6]
 	down_change_gua = base_yao_to_gua(down_change_yao_list)
-
+	# print(up_change_yao_list)
+	# print(down_change_yao_list)
 	change_gua = base_yao_to_gua(change_yao_list)
 	print_gua(change_gua)
 	change_gua_code = str(base_gua_name_map[up_change_gua]) + str(base_gua_name_map[down_change_gua])
+	# print(change_gua_code)
 	change_gua_data = gua_data_map[change_gua_code]
 	print("变卦为:", change_gua_data['name'])
 	print("辞:", change_gua_data['words'], "译:", change_gua_data['white_words'])
