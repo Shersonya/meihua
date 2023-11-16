@@ -1,11 +1,14 @@
 import tkinter as tk
 
+
 def custom_function(a, b):
     output1 = a % 8
     output2 = b % 8
     output3 = (a + b) % 6
     return output1, output2, output3
 
+
+# 计算公式
 def calculate():
     a = int(entry_a.get())
     b = int(entry_b.get())
@@ -13,12 +16,14 @@ def calculate():
     result_var.set(f"上卦：{result1}, 下卦：{result2}, 动爻：{result3}")
 
 # 创建主窗口
+
+
 root = tk.Tk()
 root.title("简易梅花")
 root.geometry('500x300')
 
 # 创建输入框和标签
-label_a = tk.Label(root, text="上卦数：" )
+label_a = tk.Label(root, text="上卦数：")
 label_a.grid(row=0, column=0)
 entry_a = tk.Entry(root)
 entry_a.grid(row=0, column=1)
