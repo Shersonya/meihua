@@ -87,17 +87,18 @@ def yao_index_map(num):
 # 使用梅花易数
 def calculate_with_plum_flower():
 	# 起上卦
-	print("使用梅花易数♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️")
-	print_a_wait_animation("卜上卦：", fake_delay)
+	#print("使用梅花易数♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️")
+	print("用者发财")
+	#print_a_wait_animation("卜上卦：", fake_delay)
 	# up_base_gua = int(round(time.time() * 1000)) % 8
-	up = int(input("上卦数："))
+	up = int(input("请输入上卦数："))
 	up_base_gua = old_map_new((up % 8))
 	up_yao_array = base_gua_to_yao(up_base_gua)
 	print("上卦获取成功,上卦为:", base_gua_name_map[up_base_gua])
 	# 起下卦
-	print_a_wait_animation("正在获取下卦：", fake_delay)
+	#print_a_wait_animation("正在获取下卦：", fake_delay)
 	# down_base_gua = random.randint(0, 999999999999) % 8
-	down = int(input("下卦数："))
+	down = int(input("请输入下卦数："))
 	down_base_gua = old_map_new((down % 8))
 	down_yao_array = base_gua_to_yao(down_base_gua)
 	print("下卦获取成功,下卦为:", base_gua_name_map[down_base_gua])
@@ -105,7 +106,7 @@ def calculate_with_plum_flower():
 	print("动爻获取成功，动爻数为:", dongyao)
 
 	# 组成卦象
-	print_a_wait_animation("正在组成本卦：", fake_delay)
+	#print_a_wait_animation("正在组成本卦：", fake_delay)
 	print("------------------------------------------------本卦------------------------------------------------")
 	yao_list = up_yao_array + down_yao_array
 	# print("yaolist:" , yao_list)
@@ -120,7 +121,7 @@ def calculate_with_plum_flower():
 	print("卦股及策略:", gua_data['stock_suggestion'])
 	print("爻辞:", gua_data['yaoci'])
 
-	print_a_wait_animation("正在组成互卦：", fake_delay)
+	#print_a_wait_animation("正在组成互卦：", fake_delay)
 	print("------------------------------------------------互卦------------------------------------------------")
 	# 读取互卦象信息
 	#up_hu_yao_list = [yao_list[0], yao_list[5], yao_list[4]]
@@ -142,7 +143,7 @@ def calculate_with_plum_flower():
 	print("卦股及策略:", hu_gua_data['stock_suggestion'])
 	print("爻辞:", hu_gua_data['yaoci'])
 
-	print_a_wait_animation("正在组成变卦：", fake_delay)
+	#print_a_wait_animation("正在组成变卦：", fake_delay)
 	print("------------------------------------------------变卦------------------------------------------------")
 	change_index = yao_index_map(dongyao)
 	change_yao_list = yao_list[:]
