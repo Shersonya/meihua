@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82b64447-5d27-42cf-99a0-21f227fd5e74" name="Changes" comment="修改缩进">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="82b64447-5d27-42cf-99a0-21f227fd5e74" name="Changes" comment="添加圖標" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,7 +68,7 @@
       <updated>1700038841306</updated>
       <workItem from="1700038891629" duration="1407000" />
       <workItem from="1700040957214" duration="20394000" />
-      <workItem from="1700127021151" duration="5666000" />
+      <workItem from="1700127021151" duration="6307000" />
     </task>
     <task id="LOCAL-00001" summary="minor change">
       <created>1700041029204</created>
@@ -128,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700130361818</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="添加圖標">
+      <created>1700187622175</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1700187622175</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,7 +148,8 @@
     <MESSAGE value="complete json" />
     <MESSAGE value="minor output change" />
     <MESSAGE value="修改缩进" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改缩进" />
+    <MESSAGE value="添加圖標" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加圖標" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/meihua$main.coverage" NAME="main Coverage Results" MODIFIED="1700040837672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

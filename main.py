@@ -175,6 +175,6 @@ def print_a_wait_animation(tips, times):
 
 init_gua_data(gua_data_path)
 calculate_with_plum_flower()
-
+input("按任意键退出")
 
 
