@@ -88,7 +88,7 @@ def yao_index_map(num):
 def calculate_with_plum_flower():
 	# 起上卦
 	#print("使用梅花易数♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️♣️")
-	print("当前版本为v1.3，用者发财")
+	print("当前版本为v1.4，用者发财")
 	#print_a_wait_animation("卜上卦：", fake_delay)
 	# up_base_gua = int(round(time.time() * 1000)) % 8
 	stock_name = input("请输入个股名称：")
