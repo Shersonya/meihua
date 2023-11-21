@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82b64447-5d27-42cf-99a0-21f227fd5e74" name="Changes" comment="取消delay">
+    <list default="true" id="82b64447-5d27-42cf-99a0-21f227fd5e74" name="Changes" comment="增加信息">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +70,7 @@
       <updated>1700038841306</updated>
       <workItem from="1700038891629" duration="1407000" />
       <workItem from="1700040957214" duration="20394000" />
-      <workItem from="1700127021151" duration="10618000" />
+      <workItem from="1700127021151" duration="11573000" />
     </task>
     <task id="LOCAL-00001" summary="minor change">
       <created>1700041029204</created>
@@ -150,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700189859327</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="增加信息">
+      <created>1700462615563</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1700462615563</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,10 +174,11 @@
     <MESSAGE value="添加圖標" />
     <MESSAGE value="手動退出" />
     <MESSAGE value="取消delay" />
-    <option name="LAST_COMMIT_MESSAGE" value="取消delay" />
+    <MESSAGE value="增加信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加信息" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/meihua$main.coverage" NAME="main Coverage Results" MODIFIED="1700040837672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/main_py$main.coverage" NAME="main Coverage Results" MODIFIED="1700191166548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/main_py$main.coverage" NAME="main Coverage Results" MODIFIED="1700541844379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

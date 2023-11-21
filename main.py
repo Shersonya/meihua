@@ -123,6 +123,7 @@ def calculate_with_plum_flower():
 	down_yao_array = base_gua_to_yao(down_base_gua)
 	print("下卦获取成功,下卦为:", base_gua_name_map[down_base_gua])
 	dongyao = (up + down) % 6
+	if dongyao == 0: dongyao = 6
 	print("动爻获取成功，动爻数为:", dongyao)
 
 	# 组成卦象
